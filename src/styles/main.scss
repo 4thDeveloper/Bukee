@@ -1,0 +1,37 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+
+.page-main{
+   background-image:url('../img/bg-main.png');
+   background-size:cover;
+   background-repeat:no-repeat;
+
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    &__logo{
+    display:block;
+    width:128px;
+    height:28px;
+    background-image:url('../img/Logo.svg');
+    }
+    &-list{list-style-type:none;
+    display:flex;
+    justify-content:flex-end;}
+   
+    &-list__item{margin-left:15px;}
+}
+
+
